@@ -1,0 +1,861 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<title> Tennis Players</title>
+</head>
+<style>
+body, html {
+    height: 100%;
+	background-color:black;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(pexels-photo-5739228.jpeg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font: "Times New Roman", Times, serif;
+}
+.p1 {
+  font-family: "Lucida Handwriting", "Cursive", monospace;
+}
+.p2{
+	font-family: "Times New Roman", Times, serif, monospace;
+	color: #FFF;
+}
+.p3{
+  text-align: center;
+  position: absolute;
+  left:20%;
+  right:20%;
+  color: white;
+  font-family: "Times New Roman", Times, serif, monospace;
+  font-size:20px;
+}
+.column {
+	float: left;
+	width: 50%;
+	height: 300px;
+	color: #FFF;
+	font-size: 20px;
+	font-style: normal;
+	font-family: "Times New Roman", Times, serif, monospace;
+	padding-top:40%;
+}
+.column1 {
+	float: left;
+	width: 50%;
+	color: #FFF;
+	padding-top:10%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+img{
+	  border-radius: 50%;
+}
+img:hover {
+  opacity: 0.5;
+}
+.p4{
+	padding-left:25%;
+}
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 35px;
+    font-size: 1.2em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	color:#FFF;
+	font-weight: bold;
+}
+.styled-table thead tr {
+    background-color: #ffbb99;
+    color:#FFF;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 10px 15px;
+}
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #ffbb99;
+}
+.left1{
+	padding-left:30px;
+}
+.right1{
+	padding-right:20px;
+}
+.top1{
+	padding-top:15%;
+}
+.top2{
+	padding-top:90%;
+}
+.top3{
+ padding-top: 120%;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-instagram {
+  background: #ffbb99;
+  color: white;
+}
+
+.fa-twitter {
+  background: #ffbb99;
+  color: white;
+}
+@media screen and (max-width: 500px) {
+  .column1 {
+    width: 100%;
+  }
+}
+th {
+    cursor: pointer;
+}
+input[type=text] {
+  width: 40px;
+  margin-left:7px;
+  background-color:#ffbb99;
+  border: 4px solid #555;
+  box-sizing: border-box;
+}
+.button1{
+  background-color: #ffbb99; 
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 50%;
+}
+</style>
+<body>
+<!--Ashleigh Barty-->
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px" class="p1">I am <span id="result"></span></h1>
+    <script type="text/javascript">
+  document.getElementById("result").innerHTML=localStorage.getItem("textValue");
+   </script>
+    <p class="p2" style="font-size:20px">And sometimes I play tennis</p>
+    <img src="ashleigh-barty.jpg" width="300px" height="300" align="center"/>
+  </div>
+<div class="row">
+<div class="top1">
+  <div class="column">
+    <p class="p4"><b>Country</b> <img src="https://www.countryflags.io/AU/shiny/64.png" height="35px" > Australia <br />
+    <b>Height</b>	1.66 m (5 ft 5 in) <br />
+    <b> Weight</b> 62 kilos <br />
+    <b>Age </b>	 <span id="age"> </span>
+    <br /><b>Plays</b>	Right-handed <br />(two-handed backhand)<br /><br />
+    <b> SINGLES</b><br />--------------------------<br />
+    <b>Career record </b>	&ensp;266–96 (73.5%)<br />
+    <b>Career titles</b>	&ensp;10 <br/>
+    <b>Highest ranking</b>	&ensp;No. 1 (24 June 2019) <br/>
+    <b>Current ranking</b>	&ensp;No. 1 (9 September 2019)<br/> <br />
+    <b> GRAND SLAM SINGLES RESULTS</b><br />--------------------------<br />
+    <b>Australian Open</b>	&ensp;&ensp;SF (2020)<br />
+    <b>French Open</b>	 &emsp;&ensp;&ensp;&nbsp; W (2019)<br/>
+    <b>Wimbledon</b> &emsp;&emsp;&ensp;&nbsp;&nbsp;4R (2019)<br/>
+    <b>US Open</b>&emsp;&emsp;&nbsp;4R (2018,2019) <br/><br/>
+    <b>OTHER TOURNAMENTS</b> <br/>--------------------------<br />
+    <b>Tour Finals</b>	&emsp;W (2019)<br/><br/>
+    <b>DOUBLES</b><br/>--------------------------<br />
+    <b>Career record</b>	&emsp;&nbsp;191–63 (75.2%)<br/>
+    <b>Career titles</b>	&emsp;&nbsp;&ensp;10<br/>
+    <b>Highest ranking</b>	&nbsp;No. 5 (21 May 2018)<br/>
+    <b>Current ranking</b>	&nbsp;No. 23 (5 April 2021)<br/><br/>
+    <b>GRAND SLAM DOUBLES RESULTS</b><br/>--------------------------<br />
+    <b>Australian Open</b>	&nbsp;&nbsp;F (2013)<br/>
+    <b>French Open</b>	&emsp;&nbsp;&nbsp;&nbsp;&nbsp;F (2017)<br/>
+    <b>Wimbledon</b>	&emsp;&emsp;&nbsp;&nbsp;F (2013)<br/>
+    <b>US Open</b>	&emsp;&emsp;&emsp;&nbsp;&nbsp;W (2018)<br/><br/>
+    <b>OTHER DOUBLES TOURNAMENTS</b><br/>--------------------------<br />
+    <b>Tour Finals</b>	SF (2018)<br/><br/>
+    <b>GRAND SLAM MIXED DOUBLES RESULTS</b><br/>--------------------------<br />
+    <b>Australian Open</b>	&nbsp;2R (2014)<br/>
+    <b>French Open</b>	&emsp;&nbsp;&nbsp;1R (2013)<br/>
+    <b>Wimbledon</b>	&emsp;&emsp;&nbsp;QF (2013)<br/>
+    <b>US Open</b>	&emsp;&emsp;&emsp;&nbsp;QF (2014)<br/><br/>
+    <b>TEAM COMPETITIONS</b><br/>--------------------------<br />
+    <b>Fed Cup</b>	F (2019)<br/>
+    <b>Hopman Cup</b>	RR (2013, 2019)<br/>
+    </p>
+  </div></div>
+  <script type="text/javascript"> //upologismos ilikias
+var a = document.getElementById('age').innerHTML;
+var dob = new Date(24/04/1996); 
+var month_diff = Date.now() - dob.getTime();
+var age_dt = new Date(month_diff); 
+var year = age_dt.getUTCFullYear();
+var age = Math.abs(year - 1996);
+a += age;
+document.getElementById('age').innerHTML = a;
+  </script>
+  <div class="column" align="center">
+    <img src="skysports-ashleigh-barty-tennis_5329199.jpg" height="300px"/>
+    <div class="top1">
+    <img src="jfdjsefnjwer.jpg" height="400px" />
+    </div>
+  </div></div>
+ 
+ <div class="top2" align="center">
+  <h2 style="color:#FFF">List of matches</h2> 
+  <table id="checkboxes2">
+  <tr>
+  <td style="color:#FFF">Tournament <input type="checkbox" name="tournament" data-id="1"><input type="text" id="inserttournament"></td>
+  <td style="color:#FFF">&nbsp; Round<input type="checkbox" name="round" data-id="2"> <input type="text" id="insertround"></td>
+  <td style="color:#FFF">&nbsp;Year <input type="checkbox" name="year"data-id="3"><input type="text" id="insertyear"></td> 
+  <td style="color:#FFF">&nbsp;Result <input type="checkbox" name="result" data-id="4"><input type="text" id="insertresult"></td> 
+  <td style="color:#FFF">&nbsp;Surface<input type="checkbox" name="surface" data-id="5"/><input type="text" id="insertsurface"></td> 
+  <td style="color:#FFF"> &nbsp;Opponent <input type="checkbox" name="opponent" data-id="6"><input type="text" id="insertopponent"></td>
+  <td style="color:#FFF"> &nbsp;Score <input type="checkbox" name="score" data-id="7"><input type="text" id="insertscore">
+  <button class="button1" type="button" id="btn_submit" onclick="myFunction();">ADD ROW</button> <button type="reset" id="btn_reset" style="display: none;"></button></td>
+</tr>
+</table>
+            <table id="table" class="styled-table" style="color: #FFF" border="1">
+                <thead>
+                    <tr>
+                         <th class="tournament">Tournament</th>
+                         <th class="round">Round</th>
+                         <th class="year">Year</th>
+                         <th class="result">Result</th>
+                         <th class="surface">Surface</th>
+                         <th class="opponent">Opponent</th>
+                         <th class="score">Score</th>
+                    </tr>
+                </thead>
+                <tbody id="ftable">
+                <p style="color: #fff"> Rounds with specific opponents:<select id="opponentsDropdown" oninput="filterTable()"><option>All</option>
+  <option>Jennifer Brady</option>
+  <option>Dayana Yastremska</option>
+  <option>Danielle Collins</option>
+  <option>Marketa Vondrousova</option>
+  <option>Anastasia Pavlyuchenkova</option>
+  <option>Petra Kvitova</option>
+  <option>Sofia Kenin</option>
+  <option>Garbiñe Muguruza</option>
+</select>
+            </tbody>
+            </table>
+        </div>
+<script>//eisagwgh dedomenwn ston pinaka
+let table_data = 
+[["Brisbane International","Round of 16","2020","Loss","Hard","Jennifer Brady","4-6,6<sup>4</sup>-7"],
+["Adelaide International","Final","2020","Win","Hard","Dayana Yastremska","6-2,7-5"],
+["Adelaide International","Semifinal","2020","Win","Hard","Danielle Collins","3-6,6-1,7-6<sup>5</sup>"],
+["Adelaide International","Quarterfinal","2020","Win","Hard","Marketa Vondrousova","6-3,6-3"],
+["Adelaide International","Round of 16","2020","Win","Hard","Anastasia Pavlyuchenkova","4-6,6-3,7-5"],
+["Australian Open","Quarterfinal","2020","Win","Hard","Petra Kvitova","7-6<sup>6</sup>,6-2"],
+["Australian Open","Semifinal","2020","Loss","Hard","Sofia Kenin","6<sup>6</sup>-7,5-7"],
+["Qatar Total Open 2020","Quarterfinal","2020","Win","Hard","Garbiñe Muguruza","6-1,6<sup>4</sup>-7,6-2"],
+["Qatar Total Open 2020","Semifinal","2020","Loss","Hard","Petra Kvitova","4-6,6-2,4-6"]]
+tablea = document.getElementById("ftable");
+
+for(var i = 0; i < table_data.length; i++){
+    var aRow = tablea.insertRow(tablea.length);
+
+    for(var k = 0;k < table_data[k].length;k++){
+        var aCell = aRow.insertCell(k);
+        aCell.innerHTML = table_data[i][k];
+    }
+}
+tablea = document.getElementById("ftable");
+if(localStorage.tableData==undefined){localStorage.tableData=tablea.innerHTML};
+tablea.innerHTML = localStorage.tableData;
+function myFunction() {
+
+    var len = $('#ftable tr').length
+    var tables = document.getElementById("ftable");
+    var row = tables.insertRow(len);
+    var cell0 = row.insertCell(0);
+    var cell1 = row.insertCell(1);
+    var cell2 = row.insertCell(2);
+    var cell3 = row.insertCell(3);
+    var cell4 = row.insertCell(4);
+    var cell5 = row.insertCell(5);
+    var cell6 = row.insertCell(6);
+  cell0.innerHTML = document.querySelector('#inserttournament').value;
+  cell1.innerHTML = document.querySelector('#insertround').value;
+  cell2.innerHTML = document.querySelector('#insertyear').value;
+  cell3.innerHTML = document.querySelector('#insertresult').value;
+  cell4.innerHTML = document.querySelector('#insertsurface').value;
+  cell5.innerHTML = document.querySelector('#insertopponent').value;
+  cell6.innerHTML = document.querySelector('#insertscore').value;
+  localStorage.tableData=tables.innerHTML;
+}
+
+$(function(){
+    $('#btn_submit').click(function(){
+       $('#btn_reset').click();  
+       document.getElementById("inserttournament").value=""
+       document.getElementById("insertround").value=""
+       document.getElementById("insertyear").value=""
+       document.getElementById("insertresult").value=""
+       document.getElementById("insertsurface").value=""
+       document.getElementById("insertopponent").value=""
+       document.getElementById("insertscore").value=""
+});
+    });
+function filterTable() {
+  let dropdown, table, rows, cells, opponent1, filter;
+  dropdown = document.getElementById("opponentsDropdown");
+  table = document.getElementById("ftable");
+  rows = table.getElementsByTagName("tr");
+  filter = dropdown.value;
+  for (let row of rows) { 
+    cells = row.getElementsByTagName("td");
+    opponent1 = cells[5] || null; 
+    if (filter === "All" || !opponent1 || (filter === opponent1.textContent)) {
+      row.style.display = ""; 
+    }
+    else {
+      row.style.display = "none"; 
+    }
+  }
+}
+</script>
+
+<div align="center" style="color: #fff">
+  <table id="winloss" class="styled-table" border="1">
+    <thead>
+      <th align="center">Wins</th>
+      <th align="center">Losses</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center"><span id="resultswins"></span></td>
+        <td align="center"><span id="resultslosses"></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<script type="text/javascript">
+    var table = document.getElementById('table'),
+    cells = table.getElementsByTagName('td'),
+    numCells = cells.length,
+    wincount = 0;
+    while(numCells--) {
+    if (cells[numCells].innerHTML == 'Win') {wincount++;}
+  }
+    document.getElementById('resultswins').innerHTML =wincount;
+</script>
+<script type="text/javascript">
+  var table = document.getElementById('table'),
+    cells = table.getElementsByTagName('td'),
+    numCells = cells.length,
+    losscount = 0;
+    while(numCells--) {
+    if(cells[numCells].innerHTML == 'Loss') {losscount++;}
+  }
+    document.getElementById('resultslosses').innerHTML =losscount;
+</script>
+<script>//emfanisi kai apokrupsi stilwn 
+  $(function() {
+    $("#checkboxes2 input[type=checkbox]").on("change", function(e) {
+        var id = $(this).attr('data-id'),
+            col = $("#table tr th:nth-child("+id+"), #table tr td:nth-child("+id+")");
+        $(this).is(":checked") ? col.show() : col.hide();
+    }).prop("checked", true).change();   
+});
+  </script>
+  <script type="text/javascript"> //taxinomisi stilwn
+      $('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
+    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+  const table = th.closest('table');
+  const tbody = table.querySelector('tbody');
+  Array.from(tbody.querySelectorAll('tr'))
+    .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+    .forEach(tr => tbody.appendChild(tr) );
+  </script>
+<div class="row" align='center'>
+  <div class="column1">
+    <img src="Ashleigh-Barty-US-Open-too-risky.jpg" height="300px" />
+  </div>
+  <div class="column1">
+    <img src="images.jpg" height="300px" />
+  </div>
+</div>
+    <div class="top1" align='center'>
+      <h3 align="center" style="color: #FFF">Singles</h3>
+  <table id="checkboxes1">
+    <tr>
+    <td style="color:#FFF">Tournament <input type="checkbox" name="tournament" data-id="1"><input type="text" id="inserttournaments"></td>  
+    <td style="color:#FFF"> &nbsp; 2015<input type="checkbox" name="2015" data-id="2"><input type="text" id="insertyear2015"></td>  
+    <td style="color:#FFF"> &nbsp;2016 <input type="checkbox" name="2016" data-id="3"> <input type="text" id="insertyear2016"></td>  
+    <td style="color:#FFF">&nbsp;2017<input type="checkbox" name="2017" data-id="4"><input type="text" id="insertyear2017"></td>  
+    <td style="color:#FFF"> &nbsp; 2018 <input type="checkbox" name="2018" data-id="5" /><input type="text" id="insertyear2018"></td>
+    <td style="color:#FFF"> &nbsp;2019 <input type="checkbox" name="2019" data-id="6"><input type="text" id="insertyear2019"></td>
+    <td style="color:#FFF"> &nbsp;2020 <input type="checkbox" name="2020" data-id="7"><input type="text" id="insertyear2020"></td>
+    <td style="color:#FFF"> &nbsp;2021 <input type="checkbox" name="2021" data-id="8"><input type="text" id="insertyear2021"></td> 
+    <td style="color:#FFF"> &nbsp;W-L <input type="checkbox" name="WL" data-id="9"><input type="text" id="insertwl"> </td> 
+    <td style="color:#FFF"> &nbsp;Win% <input type="checkbox" name="win" data-id="10"><input type="text" id="insertyearw"></td>
+  <button class="button1" type="button" id="btn_submit1" onclick="myFunction1();">ADD ROW</button> <button type="reset" id="btn_reset1" style="display: none;"></button></td>
+
+       </tr>
+     </form>
+   </table>
+            <table id="table1" class="styled-table" style="color: #FFF" border="1">
+                <thead>
+                    <tr> 
+                         <th class="tournament">Tournament</th>
+                         <th class="2015">2015</th>
+                         <th class="2016">2016</th>
+                         <th class="2017">2017</th>
+                         <th class="2018">2018</th>
+                         <th class="2019">2019</th>
+                         <th class="2020">2020</th>
+                         <th class="2021">2021</th>
+                         <th class="WL">W-L</th>
+                         <th class="win">Win%</th>
+                    </tr>
+                </thead>
+            </table>
+          </div>
+<script>//eisagwgh dedomenwn ston pinaka
+    function productsAdd1() {
+        if ($("#table1 tbody").length == 0) {
+            $("#table1").append("<tbody></tbody>");
+        }
+        $("#table1 tbody").append("<tr>" +
+            "<td class='tournament'>Australian Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>3R</td>" +
+            "<td class='2018'>QF</td>" +
+            "<td class='2019'>SF</td>" +
+            "<td class='2020'>QF</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>17-8</td>" +
+            "<td class='win'>68%</td>" +
+            "</tr>");
+            
+       $("#table1 tbody").append("<tr>" +
+            "<td class='tournament'>French Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>1R</td>" +
+            "<td class='2018'>2R</td>" +
+            "<td class='2019'>W</td>" +
+            "<td class='2020'>A</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>9-5</td>" +
+            "<td class='win'>64%</td>" +
+            "</tr>");
+
+        $("#table1 tbody").append("<tr>" +
+            "<td class='tournament'>Wimbledon</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>Q2</td>" +
+            "<td class='2017'>1R</td>" +
+            "<td class='2018'>3R</td>" +
+            "<td class='2019'>4R</td>" +
+            "<td class='2020'>NH</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>5–4</td>" +
+            "<td class='win'>56%</td>" +
+            "</tr>");
+ 
+          $("#table1 tbody").append("<tr>" +
+            "<td class='tournament'>US Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>3R</td>" +
+            "<td class='2018'>4R</td>" +
+            "<td class='2019'>4R</td>" +
+            "<td class='2020'>A</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>9–5</td>" +
+            "<td class='win'>64%</td>" +
+            "</tr>");
+
+
+    }
+
+$(document).ready(function () {
+    productsAdd1();
+});
+</script>
+<script> //emfanisi kai apokrupsi stilwn 
+  $(function() {
+    $("#checkboxes1 input[type=checkbox]").on("change", function(e) {
+        var id = $(this).attr('data-id'),
+            col = $("#table1 tr th:nth-child("+id+"), #table1 tr td:nth-child("+id+")");
+        $(this).is(":checked") ? col.show() : col.hide();
+    }).prop("checked", true).change();   
+});
+</script>
+   <script type="text/javascript"> //taxinomisi stilwn
+      $('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
+    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+  const table = th.closest('table');
+  const tbody = table.querySelector('tbody');
+  Array.from(tbody.querySelectorAll('tr'))
+    .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+    .forEach(tr => tbody.appendChild(tr) );
+  </script>
+<script>
+tablesi = document.getElementById('table1');
+if(localStorage.tableData1==undefined){localStorage.tableData1=tablesi.innerHTML};
+tablesi.innerHTML = localStorage.tableData1;
+function myFunction1() {
+    var len = $('#table1 tr').length
+    var tables1 = document.getElementById("table1");
+    var row = tables1.insertRow(len);
+    var cell0 = row.insertCell(0);
+    var cell1 = row.insertCell(1);
+    var cell2 = row.insertCell(2);
+    var cell3 = row.insertCell(3);
+    var cell4 = row.insertCell(4);
+    var cell5 = row.insertCell(5);
+    var cell6 = row.insertCell(6);
+    var cell7 = row.insertCell(7);
+    var cell8 = row.insertCell(8);
+    var cell9 = row.insertCell(9);
+  cell0.innerHTML = document.querySelector('#inserttournaments').value;
+  cell1.innerHTML = document.querySelector('#insertyear2015').value;
+  cell2.innerHTML = document.querySelector('#insertyear2016').value;
+  cell3.innerHTML = document.querySelector('#insertyear2017').value;
+  cell4.innerHTML = document.querySelector('#insertyear2018').value;
+  cell5.innerHTML = document.querySelector('#insertyear2019').value;
+  cell6.innerHTML = document.querySelector('#insertyear2020').value;
+  cell7.innerHTML = document.querySelector('#insertyear2021').value;
+  cell8.innerHTML = document.querySelector('#insertwl').value;
+  cell9.innerHTML = document.querySelector('#insertyearw').value;
+  localStorage.tableData1=tables1.innerHTML;
+}
+
+$(function(){
+    $('#btn_submit1').click(function(){
+       $('#btn_reset1').click(); 
+       document.getElementById("inserttournaments").value=""
+       document.getElementById("insertyear2015").value=""
+       document.getElementById("insertyear2016").value=""
+       document.getElementById("insertyear2017").value=""
+       document.getElementById("insertyear2018").value=""
+       document.getElementById("insertyear2019").value=""
+       document.getElementById("insertyear2020").value=""
+       document.getElementById("insertyear2021").value=""
+       document.getElementById("insertwl").value=""
+       document.getElementById("insertyearw").value=""
+});
+    });
+  </script>
+  <div align='center'>
+    <h3 align="center" style="color: #FFF">Doubles</h3>
+  <table id="checkboxes3">
+    <tr>
+    <td style="color:#FFF">Tournament <input type="checkbox" name="tournament" data-id="1"><input type="text" id="inserttournamentd"></td>  
+    <td style="color:#FFF"> &nbsp; 2015<input type="checkbox" name="2015" data-id="2"><input type="text" id="insertyear2015d"></td>  
+    <td style="color:#FFF"> &nbsp;2016 <input type="checkbox" name="2016" data-id="3"><input type="text" id="insertyear2016d"> </td>  
+    <td style="color:#FFF">&nbsp;2017<input type="checkbox" name="2017" data-id="4"><input type="text" id="insertyear2017d"></td>  
+    <td style="color:#FFF"> &nbsp; 2018 <input type="checkbox" name="2018" data-id="5" /><input type="text" id="insertyear2018d"></td>
+    <td style="color:#FFF"> &nbsp;2019 <input type="checkbox" name="2019" data-id="6"><input type="text" id="insertyear2019d"></td>
+    <td style="color:#FFF"> &nbsp;2020 <input type="checkbox" name="2020" data-id="7"><input type="text" id="insertyear2020d"></td>
+    <td style="color:#FFF"> &nbsp;2021 <input type="checkbox" name="2021" data-id="8"><input type="text" id="insertyear2021d"></td> 
+    <td style="color:#FFF"> &nbsp;W-L <input type="checkbox" name="WL" data-id="9"> <input type="text" id="insertwld"></td> 
+    <td style="color:#FFF"> &nbsp;Win% <input type="checkbox" name="win" data-id="10"><input type="text" id="insertyearwd"></td>
+  <button class="button1" type="button" id="btn_submit2" onclick="myFunction2();">ADD ROW</button> <button type="reset" id="btn_reset2" style="display: none;"></button></td>
+       </tr>
+   </table>
+            <table id="table3" class="styled-table" style="color: #FFF" border="1">
+                <thead>
+                    <tr> 
+                         <th class="tournament">Tournament</th>
+                         <th class="2015">2015</th>
+                         <th class="2016">2016</th>
+                         <th class="2017">2017</th>
+                         <th class="2018">2018</th>
+                         <th class="2019">2019</th>
+                         <th class="2020">2020</th>
+                         <th class="2021">2021</th>
+                         <th class="WL">W-L</th>
+                         <th class="win">Win%</th>
+                    </tr>
+                </thead>
+            </table>
+          </div>
+<script>//eisagwgh dedomenwn ston pinaka
+    function productsAdd3() {
+        if ($("#table3 tbody").length == 0) {
+            $("#table3").append("<tbody></tbody>");
+        }
+
+          $("#table3 tbody").append("<tr>" +
+            "<td class='tournament'>Australian Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>QF</td>" +
+            "<td class='2018'>2R</td>" +
+            "<td class='2019'>2R</td>" +
+            "<td class='2020'>2R</td>" +
+            "<td class='2021'>2R</td>" +
+            "<td class='WL'>13–6</td>" +
+            "<td class='win'>68%</td>" +
+            "</tr>");
+
+            
+       $("#table3 tbody").append("<tr>" +
+            "<td class='tournament'>French Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>F</td>" +
+            "<td class='2018'>1R</td>" +
+            "<td class='2019'>3R</td>" +
+            "<td class='2020'>A</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>10–5</td>" +
+            "<td class='win'>67%</td>" +
+            "</tr>");
+
+        $("#table3 tbody").append("<tr>" +
+            "<td class='tournament'>Wimbledon</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>1R</td>" +
+            "<td class='2017'>QF</td>" +
+            "<td class='2018'>A</td>" +
+            "<td class='2019'>3R</td>" +
+            "<td class='2020'>NH</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>13–4</td>" +
+            "<td class='win'>76%</td>" +
+            "</tr>");
+ 
+       
+          $("#table3 tbody").append("<tr>" +
+            "<td class='tournament'>US Open</td>" +
+            "<td class='2015'>A</td>" +
+            "<td class='2016'>A</td>" +
+            "<td class='2017'>2R</td>" +
+            "<td class='2018'>W</td>" +
+            "<td class='2019'>F</td>" +
+            "<td class='2020'>A</td>" +
+            "<td class='2021'>-</td>" +
+            "<td class='WL'>17–4</td>" +
+            "<td class='win'>81%</td>" +
+            "</tr>");
+            }
+    $(document).ready(function () {
+    productsAdd3();
+});
+</script>
+<script>//emfanisi kai apokrupsi stilwn 
+ $(function() {
+    $("#checkboxes3 input[type=checkbox]").on("change", function(e) {
+        var id = $(this).attr('data-id'),
+            col = $("#table3 tr th:nth-child("+id+"), #table3 tr td:nth-child("+id+")");
+        $(this).is(":checked") ? col.show() : col.hide();
+    }).prop("checked", true).change();   
+});
+  </script>
+   <script type="text/javascript"> //taxinomisi stilwn
+      $('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+    const getCellValue = (tr, idx) => tr.children[idx].innerText || tr.children[idx].textContent;
+
+const comparer = (idx, asc) => (a, b) => ((v1, v2) => 
+    v1 !== '' && v2 !== '' && !isNaN(v1) && !isNaN(v2) ? v1 - v2 : v1.toString().localeCompare(v2)
+    )(getCellValue(asc ? a : b, idx), getCellValue(asc ? b : a, idx));
+    document.querySelectorAll('th').forEach(th => th.addEventListener('click', (() => {
+  const table = th.closest('table');
+  const tbody = table.querySelector('tbody');
+  Array.from(tbody.querySelectorAll('tr'))
+    .sort(comparer(Array.from(th.parentNode.children).indexOf(th), this.asc = !this.asc))
+    .forEach(tr => tbody.appendChild(tr) );
+  </script>
+  <script>
+tabledo = document.getElementById('table3');
+if(localStorage.tableData2==undefined){localStorage.tableData2=tabledo.innerHTML};
+tabledo.innerHTML = localStorage.tableData2;
+function myFunction2() {
+    var len = $('#table3 tr').length
+    var tables2 = document.getElementById("table3");
+    var row = tables2.insertRow(len);
+    var cell0 = row.insertCell(0);
+    var cell1 = row.insertCell(1);
+    var cell2 = row.insertCell(2);
+    var cell3 = row.insertCell(3);
+    var cell4 = row.insertCell(4);
+    var cell5 = row.insertCell(5);
+    var cell6 = row.insertCell(6);
+    var cell7 = row.insertCell(7);
+    var cell8 = row.insertCell(8);
+    var cell9 = row.insertCell(9);
+  cell0.innerHTML = document.querySelector('#inserttournamentd').value;
+  cell1.innerHTML = document.querySelector('#insertyear2015d').value;
+  cell2.innerHTML = document.querySelector('#insertyear2016d').value;
+  cell3.innerHTML = document.querySelector('#insertyear2017d').value;
+  cell4.innerHTML = document.querySelector('#insertyear2018d').value;
+  cell5.innerHTML = document.querySelector('#insertyear2019d').value;
+  cell6.innerHTML = document.querySelector('#insertyear2020d').value;
+  cell7.innerHTML = document.querySelector('#insertyear2021d').value;
+  cell8.innerHTML = document.querySelector('#insertwld').value;
+  cell9.innerHTML = document.querySelector('#insertyearwd').value;
+  localStorage.tableData2=tables2.innerHTML;
+}
+
+$(function(){
+    $('#btn_submit2').click(function(){
+       $('#btn_reset2').click(); 
+       document.getElementById("inserttournamentd").value=""
+       document.getElementById("insertyear2015d").value=""
+       document.getElementById("insertyear2016d").value=""
+       document.getElementById("insertyear2017d").value=""
+       document.getElementById("insertyear2018d").value=""
+       document.getElementById("insertyear2019d").value=""
+       document.getElementById("insertyear2020d").value=""
+       document.getElementById("insertyear2021d").value=""
+       document.getElementById("insertwld").value=""
+       document.getElementById("insertyearwd").value=""
+});
+    });
+  </script>
+<div class="p3" align="center">(W) Won; (F) finalist; (SF) semifinalist; (QF) quarterfinalist; (#R) rounds 4, 3, 2, 1; (RR) round-robin stage; (Q#) qualification round; (A) absent; (NH) not held. </div>
+
+<div class="top1" align='center'>
+  <h2 style="color:#FFF"> Injuries</h2>
+   <table id="checkboxes">
+  <form action="" method="post">
+  <tr>
+  <td style="color:#FFF">Year <input type="checkbox" name="year1" data-id="1"></td> 
+  <td style="color:#FFF">&nbsp; Type Of Injury<input type="checkbox" name="toi" data-id="2"></td> 
+  <td style="color:#FFF">&nbsp; Tournament<input type="checkbox" name="tournament1" data-id="3"></td>
+</tr>
+</form>
+</table>
+            <table id="table2" class="styled-table" style="color: #FFF" border="1">
+                <thead>
+                    <tr> 
+                         <th class="year1">Year</th>
+                         <th class="toi">Type Of Injury</th>
+                         <th class="tournament1">Tournament</th>
+                    </tr>
+                </thead>
+            </table>
+          </div>
+<script>//eisagwgh dedomenwn ston pinaka
+    function productsAdd2() {
+        if ($("#table2 tbody").length == 0) {
+            $("#table2").append("<tbody></tbody>");
+        }
+        $("#table2 tbody").append("<tr>" +
+            "<td class='year1'>2014</td>" +
+            "<td class='toi'>Left adductor injury</td>" +
+            "<td class='tournament1'>Brisbane International</td>" +
+            "</tr>");
+
+        $("#table2 tbody").append("<tr>" +
+            "<td class='year1'>2016</td>" +
+            "<td class='toi'>Bone stress injury in her arm</td>" +
+            "<td class='tournament1'>Nottingham Open</td>" +
+            "</tr>");
+
+        $("#table2 tbody").append("<tr>" +
+            "<td class='year1'>2018</td>" +
+            "<td class='toi'>Back injury</td>" +
+            "<td class='tournament1'>Internationaux de Strasbourg</td>" +
+            "</tr>");
+     
+      $("#table2 tbody").append("<tr>" +
+            "<td class='year1'>2021</td>" +
+            "<td class='toi'>Right shoulder injury</td>" +
+            "<td class='tournament1'>Yarra Valley Classic</td>" +
+            "</tr>");
+
+    }
+
+$(document).ready(function () {
+    productsAdd2();
+});
+</script>
+<script>//emfanisi kai apokrupsi stilwn 
+$(function() {
+    $("#checkboxes input[type=checkbox]").on("change", function(e) {
+        var id = $(this).attr('data-id'),
+            col = $("#table2 tr th:nth-child("+id+"), #table2 tr td:nth-child("+id+")");
+        $(this).is(":checked") ? col.show() : col.hide();
+    }).prop("checked", true).change();   
+});
+</script>
+ <script type="text/javascript"> //taxinomisi stilwn
+    $('th').click(function(){
+    var table = $(this).parents('table').eq(0)
+    var rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+    this.asc = !this.asc
+    if (!this.asc){rows = rows.reverse()}
+    for (var i = 0; i < rows.length; i++){table.append(rows[i])}
+})
+function comparer(index) {
+    return function(a, b) {
+        var valA = getCellValue(a, index), valB = getCellValue(b, index)
+        return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.toString().localeCompare(valB)
+    }
+}
+function getCellValue(row, index){ return $(row).children('td').eq(index).text() }
+</script>
+<div align="center" class="top1" style="color: #fff">
+<div align='center' style="color: #FFF"><h3> Social Media Handles</h3></div><br/>
+ <a href="https://twitter.com/ashbarty" class="fa fa-twitter"></a>
+ <a href="https://www.instagram.com/ashbarty/?hl=el" class="fa fa-instagram"></a>
+</div>
+</body>
+</html>

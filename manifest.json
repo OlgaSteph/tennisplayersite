@@ -1,0 +1,18 @@
+{
+	"name":"tennis playes PWA",
+	"start_url":".",
+	"background_color":"#ffbb99",
+	"theme_color":"#ffbb99",
+	"display":"standalone",
+	"icons":[
+        {
+            "src": "ICON.png",
+            "type":"image/png",
+            "sizes": "192x192"
+
+        }
+
+    
+    ]
+
+}
